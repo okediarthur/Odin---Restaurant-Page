@@ -1,22 +1,18 @@
 
+import { generateHomeContent } from './home.js';
+import { generateMenuContent } from './menu.js';
+import { generateAboutContent } from './about .js';
+
+
+
 export function loadPage(){
     
     const contentDiv = document.getElementById('content');
     contentDiv.innerHTML = '';
 
-    //Create content for each tab
-    const homeContent = document.createElement('p');
-    homeContent.textContent = "Welcome to Tony's Steakhouse.";
-
-    const menuContent = document.createElement('p');
-    menuContent.textContent = "Check out Our Delicious Menu Options";
-
-    const aboutContent = document.createElement('p');
-    aboutContent.textContent = 'Our Story';
-
-    //Display home content
-    contentDiv.appendChild(homeContent);
-
+    //display home content
+    contentDiv.appendChild(generateHomeContent());
+    
     //function to switch content based on button clicks
     function switchContent(newContent){
         contentDiv.innerHTML = ''; //clears existing content
@@ -24,13 +20,13 @@ export function loadPage(){
         //Append new content based on the selected tab
         switch(newContent){
             case 'home':
-                contentDiv.appendChild(homeContent);
+                contentDiv.appendChild(generateHomeContent());
                 break;
             case 'menu':
-                contentDiv.appendChild(menuContent);
+                contentDiv.appendChild(generateMenuContent());
                 break;
             case 'about':
-                contentDiv.appendChild(aboutContent);
+                contentDiv.appendChild(generateAboutContent());
                 break;
             default:
                 break;

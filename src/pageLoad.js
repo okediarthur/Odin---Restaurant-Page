@@ -6,7 +6,7 @@ export function loadPage(){
 
     //Create content for each tab
     const homeContent = document.createElement('p');
-    homeContent.textContent = "Welcome to Arthur's Steakhouse.";
+    homeContent.textContent = "Welcome to Tony's Steakhouse.";
 
     const menuContent = document.createElement('p');
     menuContent.textContent = "Check out Our Delicious Menu Options";

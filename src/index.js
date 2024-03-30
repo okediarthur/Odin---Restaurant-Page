@@ -1,6 +1,6 @@
-import { generateHomeContent } from "./home";
-import { generateAboutContent } from "./about";
-import { generateMenuContent } from "./menu";
+import { generateHomeContent } from "./home.js";
+import { generateAboutContent } from "./about.js";
+import { generateMenuContent } from "./menu.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     function switchContent(newContent) {

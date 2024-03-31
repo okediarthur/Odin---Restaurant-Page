@@ -25,24 +25,8 @@ export function generateHomeContent(){
     });
     div.appendChild(ul);
 
-    // return div;
-    // const image1 = document.createElement('img');
-    // image1.src = './images/'
-
-    //Append paragraph and images to the div
-    // div.appendChild(title);
-    // div.appendChild(paragraph);
-    // // div.appendChild(image1);
-    // div.appendChild(title2);
-    // div.appendChild(ul);
-
     // //Append the div content to the main container
     const mainContent = document.getElementById('contentDiv');
     mainContent.appendChild(div);
 }
 
-// export function generateHomeContent(){
-//     const homeContent = document.createElement('p');
-//     homeContent.textContent = "Welcome to the Gastrol Pub";
-//     return homeContent;
-// }

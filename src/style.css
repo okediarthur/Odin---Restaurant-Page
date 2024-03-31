@@ -1,0 +1,100 @@
+body {
+    background-image: url('./images/Restaurant-bg.jpg');
+    background-size: cover;
+    background-position: cover;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    margin:40px 10px;
+    padding: 10px;
+    
+}
+
+.nav button {
+    margin: 0 10px;
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #e1684a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav button:hover{
+    background-color: #7e0800;
+}
+
+.home-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 5em;
+    text-align: center;
+}
+
+.about-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 5em;
+    text-align: center;
+}
+
+.content-wrapper {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+#contentDiv p{
+    font-size: 18px;
+}
+
+#contentDiv h1,
+#contentDiv p,
+#contentDiv ul {
+    text-align: center;
+}
+
+#contentDiv ul{
+    font-size: 18px;
+    list-style-type: none;
+}
+
+#contentDiv li {
+    margin-bottom: 10px;
+}
+
+#contentDiv h1,
+#contentDiv h2,
+#contentDiv h3{
+    color: #7e0800;
+}
+
+.menu-title h1{
+    font-weight: bold;
+    color: #e1684a;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menuitem {
+    width: calc(25.99% - 0px);
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.menuitem img {
+    width: 80%;
+}
+
+.menuitem p.price {
+    font-weight: bold;
+    color: #7e0800;
+}

@@ -3,6 +3,8 @@ import { generateAboutContent } from "./about.js";
 import { generateMenuContent } from "./menu.js";
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    const contentDiv = document.getElementById('contentDiv');
     function switchContent(newContent) {
         contentDiv.innerHTML = '';
 
@@ -20,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
         }
     }
+
+    generateHomeContent();
 
     document.getElementById('homeBtn').addEventListener('click', () =>{
         switchContent('home');

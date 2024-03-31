@@ -20,12 +20,6 @@ export function generateAboutContent(){
     paragraph3.textContent = "Whether you're joining us for a quick bite or settling in for a leisurely meal, we invite you to experience the Gastrol Pub difference - where great food, great drinks, and great company come together in perfect harmony.";
     div.appendChild(paragraph3);
 
-    // return div;
-    // div.appendChild(title);
-    // div.appendChild(paragraph1);
-    // div.appendChild(paragraph2);
-    // div.appendChild(paragraph3);
-
     const mainContent = document.getElementById('contentDiv');
     mainContent.appendChild(div);
 }

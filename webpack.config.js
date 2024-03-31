@@ -9,16 +9,11 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
-    // watch: true,
-    //     watchOptions: {
-    //         ignored: /node_modules/,
-    //     },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: 'index.html',
             inject:'head',
-            scriptloading: 'defer',
         })
     ],
     module: {

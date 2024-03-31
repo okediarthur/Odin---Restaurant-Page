@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "rerun": {
+      "rerun": "git subtree push --prefix dist origin gh-pages"
+    }
   },
   "repository": {
     "type": "git",
